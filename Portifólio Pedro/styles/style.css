@@ -1,0 +1,71 @@
+:root{
+    --color-white: #fff;
+    --color-white2: #E8E5E4;
+    --color-grey: #8b8b8b;
+    --color-black: #000000;
+    --color-green: #289F0D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.logoimg{
+    height: 15em;
+}
+
+/*Cabeçalho*/
+
+header{
+    padding: 1px 1px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: var(--color-grey);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: var(--color-white);
+    transform: scale(10);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+header .btn-contato button{
+    padding: 18px 38px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--color-green);
+    border: 0;
+    border-radius: 30px;
+}
