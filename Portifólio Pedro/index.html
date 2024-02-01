@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <!--link dos svg-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Menu</title>
 </head>
+
 <body>
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
-                    <img src="assets/P.png" class="logoimg" alt="logo">
+                <a href="/">
+                    <img src="assets/Pedro.png" class="logoimg" alt="logo">
                 </a>
             </div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="/" class="ativo">Início</a></li>
+                    <li><a href="/projetos">Projetos</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
@@ -29,6 +39,117 @@
             </div>
         </div> <!--interface-->
     </header>
-    
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>LAPIDANDO IDEIAS EM EXPERIÊNCIAS E SOLUÇÔES DIGITAIS<span>.</span></h1>
+                        <p>Como estudante na área de tecnologia, estou sempre em busca de novos conhecimentos e
+                            desafios.
+                            Meu objetivo é fazer o meu melhor em cada projeto, garantindo um trabalho de qualidade
+                            enquanto aprimoro minhas habilidades.
+                        </p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="/assets/EU.png" height="650px" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+    </main>
+
+    <footer>
+        <div id="footer_contents">
+            <div id="footer_contacts">
+                <h1>Polaris Group</h1>
+                <p>Atendimento Online.</p>
+                <p>Onde precisar, Quando precisar</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a href="/" class="footer_link">Home</a>
+                </li>
+                <li>
+                    <a href="/projetos" class="footer_link">Projetos</a>
+                </li>
+                <li>
+                    <a href="/sobre" class="footer_link">Sobre</a>
+                </li>
+                <li>
+                    <a href="/blog" class="footer_link">Blog</a>
+                </li>
+                <li>
+                    <a href="/contato" class="footer_link">Contato</a>
+                </li>
+            </ul>
+
+            <ul class="footer_list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Configurações</a>
+                </li>
+                <li>
+                    <a href="/sobre" class="footer_link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Política de Privacidade</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <a href="/login" class="ph3">
+                    <h3>Login</h3>
+                </a>
+
+                <a href="/cadastro" class="ph3">
+                    <h3>Cadastro</h3>
+                </a>
+
+                <a href="/logout" class="ph3">
+                    <h3>Logout</h3>
+                </a>
+
+            </div>
+
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Pedro Arthur Pizarro, todos os direitos reservados
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

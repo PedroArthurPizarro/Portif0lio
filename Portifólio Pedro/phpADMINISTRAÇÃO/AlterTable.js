@@ -4,7 +4,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "phpmyadmin",
   password: "phpmyadmin",
-  database: "polarisdb"
+  database: "PPDB"
 });
 
 con.connect(function(err) {
@@ -12,12 +12,12 @@ con.connect(function(err) {
   console.log("Connected!");
 
   var sql = `
-    ALTER TABLE users
-    ADD COLUMN sexo VARCHAR(255)
+    ALTER TABLE ADM
+    ADD COLUMN TC VARCHAR(255)
   `;
   
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("Column name changed from 'senha' to 'email'");
+    console.log("Column Created'");
   });
 });

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="/assets/Pedro.png" alt="">
+        </div>
+        <div class="form">
+            <form action="/login" method="post" autocomplete="on" class="right_form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="cadastro-button">
+                        <button><a href="/cadastro">Cadastrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    
+                </div>
+                <div class="continue-button">
+                    <button value="Login"><a href="/Blog">Login</a></button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+
+</html>

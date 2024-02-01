@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Imagens_Polaris/Polaris-logo.png">
+    <link rel="stylesheet" href="/cadastro.css">
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="/assets/Pedro.png" alt="">
+        </div>
+        <div class="form">
+            <form action="/cadastrar" method="post" class="right_form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="/login">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nome">Sobrenome</label>
+                        <input id="nome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="TC">Telefone/Celular</label>
+                        <input id="TC" type="text" name="TC" placeholder="Digite seu Número" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmsenha">Confirme sua senha</label>
+                        <input id="confirmsenha" type="password" name="confirmsenha" placeholder="Confirme sua senha" required>
+                    </div>
+
+                </div>
+                
+            <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Sexo</h6>
+                    </div>
+                <div class="gender-group">
+
+                    <div class="gender-input">
+                        <input value="Feminino" type="radio" id="female" name="sexo">
+                        <label for="female">Feminino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input value="Masculino" type="radio" id="male" name="sexo">
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input value="Não disse" type="radio" id="not" name="sexo">
+                        <label for="not">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+
+                <div class="continue-button">
+                    <button value="Cadastrar"><a href="#">Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+
+</html>

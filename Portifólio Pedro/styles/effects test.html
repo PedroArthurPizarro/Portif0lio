@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Neon Button</title>
+<style>
+.neon-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.neon-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  z-index: -1;
+  transition: border-color 2.3s ease, transform 2.5s ease;
+}
+
+.neon-button:hover::before {
+  border-color: #00ff00;
+  transform: scale(2);
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+  }
+}
+</style>
+</head>
+<body>
+<button class="neon-button">Animated Neon Button</button>
+</body>
+</html>

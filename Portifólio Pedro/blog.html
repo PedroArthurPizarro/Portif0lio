@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/blog.css"> <!-- Verifique se o caminho está correto -->
+</head>
+<body>
+
+    <header>
+        <!-- Seu cabeçalho aqui -->
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/Blog">Blog</a></li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Blog</h1>
+        <!-- Aqui você pode adicionar o formulário para criar postagens -->
+        <form action="/criar_postagem" method="POST">
+            <input type="text" name="titulo" placeholder="Título da postagem">
+            <textarea name="conteudo" placeholder="Conteúdo da postagem"></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+
+        <!-- Aqui você pode listar as postagens existentes -->
+        <div class="postagens">
+            <!-- Postagem de exemplo -->
+            <div class="postagem">
+                <h2>Título da postagem</h2>
+                <p>Conteúdo da postagem...</p>
+                <a href="/editar_postagem">Editar</a> <!-- Adicione o link para editar a postagem -->
+            </div>
+            <!-- Adicione mais postagens conforme necessário -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+
+</body>
+</html>
