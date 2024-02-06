@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Postagem</title>
+    <link rel="stylesheet" href="/blog.css">
+</head>
+<body>
+
+    <header>
+        <!-- Seu cabeçalho aqui -->
+    </header>
+
+    <main>
+        <h1>Criar/Editar Postagem</h1>
+        <!-- Formulário para criar/editar postagem -->
+        <form action="/add" method="POST">
+            <input type="hidden" name="id" value="id">
+            <input type="text" name="título" placeholder="Título da postagem" value="título">
+            <textarea name="conteúdo" placeholder="Conteúdo da postagem">Conteúdo</textarea>
+            <button type="submit">Salvar</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+
+</body>
+</html>

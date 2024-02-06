@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/blog.css"> <!-- Verifique se o caminho está correto -->
+</head>
+<body>
+
+    <header>
+        <!-- Seu cabeçalho aqui -->
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/blog" class="ativo">Blog</a></li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Blog</h1>
+    <div class="postagens">
+        <% postagens.forEach(postagem => { %>
+            <div class="postagem">
+                <h2><%= postagem.título %></h2>
+                <p><%= postagem.conteúdo %></p>
+            </div>
+        <% }); %>
+    </div>
+    </main>
+
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+
+</body>
+</html>
